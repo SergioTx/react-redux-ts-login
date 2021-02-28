@@ -9,9 +9,8 @@ const loadingSelector = (state: RootState) => state.auth.loading;
 const errorSelector = (state: RootState) => state.auth.error;
 
 const Login = () => {
-  // TODO DELETE INITIAL VALUES
-  const [email, setEmail] = useState('test@test.com');
-  const [password, setPassword] = useState('testtest');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const dispatch = useDispatch();
   const loading = useSelector(loadingSelector);
   const loginError = useSelector(errorSelector);

@@ -1,0 +1,23 @@
+div.match.card {
+  padding: 2rem;
+}
+
+div.match.card .card-header {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+div.match.card .card-body table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+div.match.card .card-body table td,
+div.match.card .card-body table th {
+  padding: 5px;
+  border: 1px solid #666;
+}
+
+div.match.card .card-body .you {
+  color: royalblue;
+}

@@ -1,18 +1,18 @@
-div.card {
+div.user.card {
   padding: 2rem;
 }
 
-div.card .card-header {
+div.user.card .card-header {
   padding-bottom: 1rem;
   border-bottom: 1px solid black;
 }
 
-div.card .card-header .skill {
+div.user.card .card-header .skill {
   border-radius: 5px;
   background: #fce094;
   padding: 5px;
 }
 
-div.card .card-body table {
+div.user.card .card-body table {
   text-align: left;
 }

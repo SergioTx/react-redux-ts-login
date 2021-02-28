@@ -6,7 +6,7 @@ import './UserCard.css';
 const UserCard = (props: { user: UserSettings }) => {
   const { name, birthDate, gender, height, skill, city } = props.user;
   return (
-    <div className="card">
+    <div className="user card">
       <div className="card-header">
         {name} <span className="skill">{skill}</span>
       </div>

@@ -1,5 +1,6 @@
 import { Dispatch } from 'redux';
 import { ThunkAction } from 'redux-thunk';
+import { RootState } from '../store';
 import {
   AuthActionTypes,
   AuthState,
@@ -30,7 +31,7 @@ export const loginFail = (): AuthActionTypes => {
   };
 };
 
-type AuthActionThunk = ThunkAction<void, AuthState, unknown, AuthActionTypes>;
+type AuthActionThunk = ThunkAction<void, RootState, unknown, AuthActionTypes>;
 
 interface LoginResponse {
   displayName: string;

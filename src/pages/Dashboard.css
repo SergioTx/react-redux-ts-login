@@ -64,6 +64,7 @@
 }
 
 .dashboard main h2 {
+  grid-column: 0/2;
   background: #fce094;
   padding: 3rem;
   margin-top: 0;

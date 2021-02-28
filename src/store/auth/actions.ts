@@ -1,5 +1,6 @@
 import { ThunkAction } from 'redux-thunk';
 import { RootState } from '../store';
+import { firebaseLogin } from '../url';
 import {
   AuthActionTypes,
   LOGIN_FAIL,
@@ -51,14 +52,11 @@ export const login = (email: string, password: string): AuthActionThunk => (
     password,
     returnSecureToken: true,
   });
-  fetch(
-    'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBXFOgoMgDBsgqSKUbN0zjynlYnUfZQPa4',
-    {
-      method: 'post',
-      headers: { 'Content-Type': 'application/json' },
-      body,
-    }
-  )
+  fetch(firebaseLogin, {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body,
+  })
     .then((res) => {
       if (!res.ok) throw Error();
       return res;

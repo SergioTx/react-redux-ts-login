@@ -10,12 +10,23 @@ div.match.card .card-header {
 div.match.card .card-body table {
   border-collapse: collapse;
   text-align: left;
+  width: 100%;
 }
 
-div.match.card .card-body table td,
+div.match.card .card-body table th,
+div.match.card .card-body table td {
+  padding: 0.5rem;
+}
+
 div.match.card .card-body table th {
-  padding: 5px;
-  border: 1px solid #666;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+}
+
+div.match.card .card-body table td {
+  border-right: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  text-align: right;
 }
 
 div.match.card .card-body .you {

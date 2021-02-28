@@ -1,9 +1,7 @@
-import { Dispatch } from 'redux';
 import { ThunkAction } from 'redux-thunk';
 import { RootState } from '../store';
 import {
   AuthActionTypes,
-  AuthState,
   LOGIN_FAIL,
   LOGIN_START,
   LOGIN_SUCCESS,
@@ -45,7 +43,7 @@ interface LoginResponse {
 }
 
 export const login = (email: string, password: string): AuthActionThunk => (
-  dispatch: Dispatch
+  dispatch
 ) => {
   dispatch(loginStart());
   const body = JSON.stringify({

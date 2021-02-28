@@ -1,4 +1,3 @@
-import { Dispatch } from 'redux';
 import { ThunkAction } from 'redux-thunk';
 import { RootState } from '../store';
 import { firebaseUrl } from '../url';
@@ -7,7 +6,6 @@ import {
   FETCH_SETTINGS_START,
   FETCH_SETTINGS_SUCCESS,
   SettingsActionTypes,
-  SettingsState,
   UserSettings,
 } from './types';
 

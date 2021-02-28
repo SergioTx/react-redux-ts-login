@@ -8,6 +8,7 @@
 
 .login-form {
   height: 50%;
+  min-height: 420px;
   width: 50%;
   background-color: white;
   padding: 2rem;

@@ -8,10 +8,6 @@ It consists of a login page and a dashboard with 2 pages: secret-dashboard and s
 
 More info about the app can be found in the SOLUTION.md file.
 
-## Files to add manually
-
-There is a new file that has to be set manually after downloading the project: `url.secret.ts`. There is a `url.secret.example.ts` example where it should go. For the real api key, ask me.
-
 ## Available Scripts
 
 In the project directory, you can run:

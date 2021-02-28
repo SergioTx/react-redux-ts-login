@@ -38,8 +38,6 @@ Login is performed against Firebase. It returns a JWT. All the data of the app i
 
 In the description it was requested to obtain the user name from the JWT, but as Firebase returns it directly, I found it unnecesary. Instead, I stored the user email and the JWT inside Redux to use them. Calculating data that was also returned by the backend did not make sense for me (and also would have meant adding a library).
 
-The api key was not uploaded. It must be placed in a file called url.secret.ts that exports an apiKey string constant. Ask for it and create the file manually.
-
 ## Git
 
 I didn't follow any git flow pattern. If I had to work in a bigger project I would have created a feature branch for each of the parts.

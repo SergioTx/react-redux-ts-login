@@ -40,6 +40,10 @@ In the description it was requested to obtain the user name from the JWT, but as
 
 The login data does not persist after reloading the page right now. If needed, I would have stored it in the local/session storage.
 
+## Styles
+
+I have used global styles combined with classes as the project is so small.
+
 ## Git
 
 I didn't follow any git flow pattern. If I had to work in a bigger project I would have created a feature branch for each of the parts.
